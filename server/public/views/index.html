@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+	<meta charset='utf-8'>
+	<title>Classroom Database</title>
+	<script src='/vendor/angular/angular.min.js'></script>
+	<script src='/assets/scripts/client.js'></script>
+</head>
+<body ng-controller='MainController'>
+	<div>
+		<form novalidate>
+			Assignment Number: <input type='number' ng-model='assignment.assignmentNumber'/><br />
+			Student Name: <input type='text' ng-model='assignment.studentName' /><br />
+			Score: <input type='number' ng-model='assignment.score' /><br />
+			Date Completed: <input type='date' ng-model='assignment.dateCompleted' /><br />
+			<input type='submit' ng-click='add(assignment)' value='Submit' />
+		</form>
+		<ul ng-repeat='assignment in assignments'>
+			<li>Hey {{ assignment.studentName }}, Your score on {{ assignment.assignmentNumber }} was, {{ assignment.score }}.</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "classroom-database",
+  "version": "0.0.1",
+  "description": "In this exercise you'll be creating a MongoDB application to store student assignment information, including the assignment name, the student's identity, their score on the assignment, and the date it was turned in. Only the identity and date completed are required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisIngram/Prime_Classroom_Database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TravisIngram/Prime_Classroom_Database/issues"
+  },
+  "homepage": "https://github.com/TravisIngram/Prime_Classroom_Database#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12"
+  }
+}
